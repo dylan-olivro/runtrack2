@@ -24,7 +24,7 @@
     $myBool = true;
     echo $myBool . '<br>';
 
-    $mybool = false;
+    $myBool = false;
     echo $myBool;
     ?>
 </body>
