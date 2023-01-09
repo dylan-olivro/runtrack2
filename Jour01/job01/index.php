@@ -26,6 +26,7 @@
 
     $myBool = false;
     echo $myBool;
+    var_dump($myBool)
     ?>
 </body>
 
