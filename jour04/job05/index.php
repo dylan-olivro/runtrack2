@@ -15,13 +15,27 @@
 
         <input type="password" id="password" name="password" placeholder="password">
 
-        <input type="submit" name="submit">
+        <input type="submit">
         <br>
     </form>
     <?php
-    if ($_POST['username'] == 'John' || $_POST['password'] == 'Rambo') {
+
+    if (isset($_POST['username']) == null) {
+        $_POST['username'] = '';
+    }
+    if (isset($_POST['password']) == null) {
+        $_POST['password'] = '';
+    }
+
+
+    if ($_POST['username'] == 'John' && $_POST['password'] == 'Rambo') {
+
         echo "C'est pas ma guerre";
+    } else if ($_POST['username'] == "" && $_POST['password'] == "") {
+
+        echo '';
     } else {
+
         echo "Votre pire cauchemar";
     }
     ?>

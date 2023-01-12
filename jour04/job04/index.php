@@ -15,7 +15,7 @@
 
         <input type="text" id="lastname" name="lastname" placeholder="lastname">
 
-        <input type="submit" name="submit">
+        <input type="submit">
         <br>
     </form>
 
@@ -27,22 +27,16 @@
             </tr>
         </thead>
         <tbody>
+            <?php
+            foreach ($_POST as $key => $value) {
+                echo "
             <tr>
-                <td>prenom</td>
-                <td><?php
-                    if (isset($_POST['firstname']) == null) {
-                        $_POST['firstname'] = '';
-                    }
-                    echo $_POST['firstname']; ?></td>
+            <td> $key</td>
+            <td> $value</td>
             </tr>
-            <tr>
-                <td>nom</td>
-                <td><?php
-                    if (isset($_POST['lastname']) == null) {
-                        $_POST['lastname'] = '';
-                    }
-                    echo $_POST['lastname']; ?></td>
-            </tr>
+            ";
+            }
+            ?>
         </tbody>
     </table>
 

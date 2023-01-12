@@ -12,7 +12,7 @@
     <form action="" method="get">
         <input type="text" id="firstname" name="firstname">
         <input type="text" id="lastname" name="lastname">
-        <input type="submit" name="submit">
+        <input type="submit">
         <br>
         <?php
 

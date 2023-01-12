@@ -15,7 +15,7 @@
 
         <input type="text" id="hauteur" name="hauteur" placeholder="hauteurs">
 
-        <input type="submit" name="submit">
+        <input type="submit">
         <br>
     </form>
 </body>

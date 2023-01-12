@@ -16,7 +16,7 @@
 
         <input type="text" id="lastname" name="lastname" placeholder="lastname">
 
-        <input type="submit" name="submit">
+        <input type="submit">
         <br>
     </form>
 
@@ -28,22 +28,16 @@
             </tr>
         </thead>
         <tbody>
+            <?php
+            foreach ($_GET as $key => $value) {
+                echo "
             <tr>
-                <td>prenom</td>
-                <td><?php
-                    if (isset($_GET['firstname']) == null) {
-                        $_GET['firstname'] = '';
-                    }
-                    echo $_GET['firstname']; ?></td>
+            <td> $key</td>
+            <td> $value</td>
             </tr>
-            <tr>
-                <td>nom</td>
-                <td><?php
-                    if (isset($_GET['lastname']) == null) {
-                        $_GET['lastname'] = '';
-                    }
-                    echo $_GET['lastname']; ?></td>
-            </tr>
+            ";
+            }
+            ?>
         </tbody>
     </table>
 
