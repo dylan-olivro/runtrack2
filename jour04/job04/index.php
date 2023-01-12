@@ -29,11 +29,19 @@
         <tbody>
             <tr>
                 <td>prenom</td>
-                <td><?php echo $_POST['firstname']; ?></td>
+                <td><?php
+                    if (isset($_POST['firstname']) == null) {
+                        $_POST['firstname'] = '';
+                    }
+                    echo $_POST['firstname']; ?></td>
             </tr>
             <tr>
                 <td>nom</td>
-                <td><?php echo $_POST['lastname']; ?></td>
+                <td><?php
+                    if (isset($_POST['lastname']) == null) {
+                        $_POST['lastname'] = '';
+                    }
+                    echo $_POST['lastname']; ?></td>
             </tr>
         </tbody>
     </table>

@@ -30,11 +30,19 @@
         <tbody>
             <tr>
                 <td>prenom</td>
-                <td><?php echo $_GET['firstname']; ?></td>
+                <td><?php
+                    if (isset($_GET['firstname']) == null) {
+                        $_GET['firstname'] = '';
+                    }
+                    echo $_GET['firstname']; ?></td>
             </tr>
             <tr>
                 <td>nom</td>
-                <td><?php echo $_GET['lastname']; ?></td>
+                <td><?php
+                    if (isset($_GET['lastname']) == null) {
+                        $_GET['lastname'] = '';
+                    }
+                    echo $_GET['lastname']; ?></td>
             </tr>
         </tbody>
     </table>
