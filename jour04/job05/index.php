@@ -20,24 +20,28 @@
     </form>
     <?php
 
-    if (isset($_POST['username']) == null) {
-        $_POST['username'] = '';
+    // if (isset($_POST['username']) == null) {
+    //     $_POST['username'] = '';
+    // }
+    // if (isset($_POST['password']) == null) {
+    //     $_POST['password'] = '';
+    // }
+
+    foreach ($_POST as $key => $value) {
+
+        if ($_POST['username'] == 'John' && $_POST['password'] == 'Rambo') {
+
+            echo "C'est pas ma guerre";
+            break;
+        } elseif ($_POST['username'] == null && $_POST['password'] == null) {
+            echo '';
+            break;
+        } else {
+            echo "Votre pire cauchemar";
+            break;
+        }
     }
-    if (isset($_POST['password']) == null) {
-        $_POST['password'] = '';
-    }
 
-
-    if ($_POST['username'] == 'John' && $_POST['password'] == 'Rambo') {
-
-        echo "C'est pas ma guerre";
-    } else if ($_POST['username'] == "" && $_POST['password'] == "") {
-
-        echo '';
-    } else {
-
-        echo "Votre pire cauchemar";
-    }
     ?>
 </body>
 

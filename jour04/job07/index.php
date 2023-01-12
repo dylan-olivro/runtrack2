@@ -11,13 +11,14 @@
 <body>
     <form action="" method="get">
 
-        <input type="text" id="largeur" name="largeur" placeholder="largeur">
-
         <input type="text" id="hauteur" name="hauteur" placeholder="hauteurs">
 
         <input type="submit">
         <br>
     </form>
+    <?php
+
+    ?>
 </body>
 
 </html>

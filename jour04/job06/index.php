@@ -11,7 +11,7 @@
 <body>
     <form action="" method="get">
 
-        <input type="text" id="nombre" name="nombre" placeholder="nombre">
+        <input type="int" id="nombre" name="nombre" placeholder="Nombre">
 
         <input type="submit">
         <br>
@@ -27,7 +27,9 @@
     // }
     foreach ($_GET as $key => $value) {
 
-        if ($value % 2 == 0) {
+        if ($value == null) {
+            echo '';
+        } elseif ($value % 2 == 0) {
             echo $value . " est un nombre pair";
         } else {
             echo $value . " est un nombre impaire";
