@@ -9,16 +9,33 @@
 </head>
 
 <body>
+    <style>
+        body {
+            text-align: center;
+        }
+    </style>
     <?php
     $hauteur = 5;
 
     for ($i = 0; $i < $hauteur; $i++) {
-        echo str_repeat('&nbsp;', ($hauteur - $i));
-        for ($x = 0; $x <= $i; $x++) {
+        for ($k = ($hauteur - $i); $k > 0; $k--) {
+            echo " ";
+        }
+        for ($z = 0; $z <= $i; $z++) {
             echo "*";
         }
         echo "<br />";
     }
+
+    // $hauteur = 5;
+
+    // for ($i = 0; $i < $hauteur; $i++) {
+    //     echo str_repeat('&nbsp;', ($hauteur - $i));
+    //     for ($x = 0; $x <= $i; $x++) {
+    //         echo "*";
+    //     }
+    //     echo "<br />";
+    // }
     ?>
 </body>
 
