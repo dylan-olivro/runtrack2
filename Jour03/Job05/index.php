@@ -30,29 +30,6 @@
             }
         }
     }
-    // echo $str[$i] . " = " . $x . "</br>";
-
-    // $signal = 0;
-    // foreach ($tabVowels as $vowels) {
-
-    //     if ($str[$i] == $vowels) {
-    //         $signal = 1;
-    //         $countVowels++;
-    //     }
-    // }
-    // if ($signal == 0) {
-
-    //     $countConsonants++;
-    // }
-    // for ($i = 0; isset($str[$i]) != null; $i++) {
-
-    //     if (in_array($str[$i], $tabVowels)) {
-    //         $countVowels++;
-    //     } else if ($str[$i] >= 'a' && $str[$i] <= 'z') {
-    //         $countConsonants++;
-    //     }
-    // }
-
     ?>
     <style>
         table {
