@@ -11,16 +11,15 @@
 <body>
     <?php
     $largeur = 20;
-    $longueur = 10;
+    $hauteur = 10;
 
-    while ($largeur <= 2000) { ?>
+    echo '
         <div style=" 
-        height: <?php echo $longueur ?>px; 
-        width: <?php echo $largeur ?>px; 
-        border: 1px solid; 
-        margin-bottom: 1rem;"></div>
-    <?php $largeur *= 2;
-    } ?>
+        height: ' . $hauteur . 'rem; 
+        width:' . $largeur . 'rem; 
+        border: 1px solid;">
+        </div>';
+    ?>
 </body>
 
 </html>
