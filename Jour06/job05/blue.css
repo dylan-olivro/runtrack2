@@ -1,0 +1,17 @@
+body {
+  background-color: blue;
+  color: #fff;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+select {
+  background-color: yellow;
+  padding: 1%;
+  border-radius: 15px;
+}
+
+input {
+  border-radius: 20px;
+  padding: 1%;
+  background-color: yellow;
+}
