@@ -19,14 +19,6 @@
         <br>
     </form>
     <?php
-
-    // if (isset($_POST['username']) == null) {
-    //     $_POST['username'] = '';
-    // }
-    // if (isset($_POST['password']) == null) {
-    //     $_POST['password'] = '';
-    // }
-
     foreach ($_POST as $key => $value) {
 
         if ($_POST['username'] == 'John' && $_POST['password'] == 'Rambo') {
