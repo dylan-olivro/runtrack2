@@ -14,21 +14,21 @@
 
     function leetSpeak($str)
     {
-        $tab = ['a', 'A', 'b', 'B', 'e', 'E', 'g', 'G', 'l', 'L', 's', 'S', 't', 'T'];
+        // $tab = ['a', 'A', 'b', 'B', 'e', 'E', 'g', 'G', 'l', 'L', 's', 'S', 't', 'T'];
         for ($i = 0; isset($str[$i]); $i++) {
-            if ($str[$i] == $tab[0] || $str[$i] == $tab[1]) {
+            if ($str[$i] == 'a' || $str[$i] == 'A') {
                 $str[$i] = '4';
-            } elseif ($str[$i] == $tab[2] || $str[$i] == $tab[3]) {
+            } elseif ($str[$i] == 'b' || $str[$i] == 'B') {
                 $str[$i] = '8';
-            } elseif ($str[$i] == $tab[4] || $str[$i] == $tab[5]) {
+            } elseif ($str[$i] == 'e' || $str[$i] == 'E') {
                 $str[$i] = '3';
-            } elseif ($str[$i] == $tab[6] || $str[$i] == $tab[7]) {
+            } elseif ($str[$i] == 'g' || $str[$i] == 'G') {
                 $str[$i] = '6';
-            } elseif ($str[$i] == $tab[8] || $str[$i] == $tab[9]) {
+            } elseif ($str[$i] == 'l' || $str[$i] == 'L') {
                 $str[$i] = '1';
-            } elseif ($str[$i] == $tab[10] || $str[$i] == $tab[11]) {
+            } elseif ($str[$i] == 's' || $str[$i] == 'S') {
                 $str[$i] = '5';
-            } elseif ($str[$i] == $tab[12] || $str[$i] == $tab[13]) {
+            } elseif ($str[$i] == 't' || $str[$i] == 'T') {
                 $str[$i] = '7';
             }
         }
