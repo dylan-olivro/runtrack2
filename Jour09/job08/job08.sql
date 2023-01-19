@@ -1,0 +1,1 @@
+SELECT COUNT(*) as 'Nombre d\'étudiants' FROM `etudiants` WHERE 1
