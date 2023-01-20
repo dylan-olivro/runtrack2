@@ -55,7 +55,9 @@
 
         th,
         td {
+            padding: 0.5em;
             border: 1px solid;
+            text-align: center;
         }
     </style>
 </body>
